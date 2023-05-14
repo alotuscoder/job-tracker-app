@@ -1,0 +1,32 @@
+.drag-el-wrapper {
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+}
+
+.table-container {
+  display: flex;
+}
+
+.status-col {
+  width: 200px;
+  border: 4px double black;
+  margin-right: 24px;
+  text-align: center;
+}
+
+.status-col#saved {
+  border-color: red;
+}
+
+.status-col#applied {
+  border-color: green;
+}
+
+.drop-el {
+  padding: 16px;
+}
+
+#new-job-button {
+  margin: 20px;
+}

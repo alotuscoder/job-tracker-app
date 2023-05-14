@@ -1,1 +1,51 @@
-<p>App created and working</p>
+<h1>Job Tracker App!</h1>
+
+<h2>Test Drag and Drop feature</h2>
+<button id="new-job-button" mat-raised-button color="primary">New Job +</button>
+<div class="table-container">
+  <div
+    id="saved"
+    class="status-col drop-container"
+    (drop)="drop($event)"
+    (dragover)="allowDrop($event)"
+  >
+    <h3>Saved</h3>
+    <div
+      id="job1"
+      class="drop-el"
+      [draggable]="true"
+      (dragstart)="drag($event)"
+    >
+      <p>Front end developer</p>
+      <p>Johns hopkins university</p>
+    </div>
+  </div>
+  <div
+    id="applied"
+    class="status-col drop-container"
+    (drop)="drop($event)"
+    (dragover)="allowDrop($event)"
+  >
+    <h3>Applied</h3>
+  </div>
+</div>
+
+<!-- original working example https://www.w3schools.com/html/html5_draganddrop.asp-->
+<!-- <div class="drag-el-wrapper">
+  <div
+    id="item1"
+    [draggable]="true"
+    (dragstart)="drag($event)"
+    width="336"
+    height="69"
+  >
+    hello there
+  </div>
+</div>
+
+<div
+  class="drag-el-wrapper"
+  id="item2"
+  (drop)="drop($event)"
+  (dragover)="allowDrop($event)"
+></div> -->
